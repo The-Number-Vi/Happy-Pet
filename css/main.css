@@ -1,0 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caption {
+    color: black;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 325;
+    margin-right: 215; 
+}
