@@ -6,8 +6,7 @@
     <title>Happy Pet</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -23,9 +22,10 @@
                 </div>
                 <ul class="menu">
                     <li>
-                        <a href="#">
+                        <a href="#" class="maintext">
                             Главная
                         </a>
+                            <div class="underlining"></div>
                     </li>
                     <li>
                         <a href="#">
@@ -44,23 +44,45 @@
                     </li>
                 </ul>
                 <div class="telephone">
-                    <img src="img/phone.svg" alt="telephone icon" class="telimg">
+                    <img src="img/phone.svg" alt="telephone icon" class="telicon">
                     <a href="tel:+0989156623" class="tel">+098-91-566-23</a>
                 </div>
                 <div class="cart">
-                    <div class="cartimg">                    
-                        <img src="img/backet.svg" alt="cart icon" class="carticon"></div>
-                        <div class="cartcircle"></div>
+                    <div class="cartimg">    
+                        <a href="#" class="cartcirclelink">
+                            <img src="img/backet.svg" alt="cart icon" class="carticon"></div>
+                            <div class="cartcircle"></div>
+                        </a>
                     <a href="#" class="amount">100$</a>
                 </div>
             </div>
-            <div class="offer">
-
-            </div>
         </div>
     </header>
-
-
-    </header>
+    <offer id="offer" class="offer">
+        <div id="offercontainer" class="offercontainer">
+            <u1 class="title">
+                Твой новый друг с доставкой на дом!
+            </u1>
+            <u2 class="desctiption">
+                Онлайн-магазин домашних животных - удобное решение, когда лень выходить из дома.
+            </u2>
+            <a href="#" class="offerbtn">
+                <div class="offerbtnrect"></div>
+                <p class="offerbtntext">
+                    Посмотреть друзей
+                </p>
+            </a>
+        </div>
+    </offer>
+    <picture class="picture">
+        <div class="dog">
+            <div class="doglight"></div>
+            <img src="img/dog.png" alt="dog picture" class="dogimg">
+        </div>
+        <div class="cat">
+            <div class="catlight"></div>
+            <img src="img/cat.png" alt="cat picture" class="catimg">
+        </div>
+    </picture>
 </body>
 </html>
