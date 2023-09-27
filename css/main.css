@@ -1,21 +1,24 @@
 /*-------------------- body --------------------*/
 body {
     font-family: 'Montserrat', sans-serif;
+    width: 1600px;
+    height: 900px;
+    overflow: hidden;
     background: linear-gradient(66deg, rgba(255, 245, 30, 0.55) 10%, rgba(255, 255, 155, 0.10) 145%);
 }
 /*-------------------- body --------------------*/
 
 /*-------------------- container --------------------*/
-.container{
+.headercontainer{
     width: 1170px;
-    margin: 0 auto; /*centering*/
+    margin-left: 0 auto; /*centering*/
 }
 /*-------------------- container --------------------*/
 /*-------------------- header --------------------*/
 .nav{
     display:flex;
     width: 1020px; height: 50px;
-    margin-top: 80px; left: 215px;
+    margin-top: 80px; padding-left: 30%;
 }
 /*-------------------- header --------------------*/
 /*-------------------- logo --------------------*/
@@ -23,7 +26,7 @@ body {
     display:flex;
 }
 .logoimg{
-    width: 50px; height: 50px;
+    width: 50%; height: 50%;
 }
 .logoicon{
     position: absolute;
@@ -39,10 +42,13 @@ body {
     z-index: -1;
 }
 .logotitle{
-    margin: 5px;
-    font-size: 24;
+    padding-left: 15px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 24px;
     font-weight: 800;
     text-align: center;
+    white-space: nowrap;
 }
 /*-------------------- logo --------------------*/
 /*-------------------- menu --------------------*/
@@ -54,7 +60,7 @@ body {
 }
 .menu li a{
     text-decoration: none;
-    margin: 10px;
+    padding: 10px;
     color:#000;
 }
 .maintext{
@@ -115,8 +121,15 @@ body {
 /*-------------------- offer --------------------*/
 /*-------------------- offercontainer --------------------*/
 .offercontainer{
-    width: 500px; height: 335px;
-    margin-left: 215px; margin-top: 325px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 325px; padding-left: 21%; padding-right: 225px;
+    width: 500px;
+    height: 335px;
+    flex-shrink: 0;
 }
 /*-------------------- offercontainer --------------------*/
 /*-------------------- title --------------------*/
@@ -132,7 +145,7 @@ body {
     font-size: 48px;
     font-style: normal;
     font-weight: 800;
-    line-height: normal;
+    line-height: 1;
 }
 /*-------------------- title --------------------*/
 /*-------------------- desctiption --------------------*/
@@ -150,101 +163,100 @@ body {
     font-weight: 400;
     line-height: normal;
 
-    margin-top: 55px;
+    padding-top: 5%;
 }
 /*-------------------- desctiption --------------------*/
 /*-------------------- offerbtn --------------------*/
 .offerbtn{
     display:flex;
-    width: 315px; height: 70px;
-    margin-left: 92px; margin-top: 30px;
+    width: 75%; height: 70px;
+    margin-top: 5%;
 
     text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 60px;
+    background: linear-gradient(251deg, rgba(54, 167, 54, 0.90) 27.94%, rgba(191, 227, 191, 0.29) 152.54%); 
+    box-shadow: 0px 5px 30px 1px #36A736; 
+    z-index: -1;
+
 }
 /*-------------------- offerbtn --------------------*/
-/*-------------------- offerbtnrect --------------------*/
-.offerbtnrect{
-    position: absolute;
-    width: 315px; height: 70px;
-
-    border-radius: 60px;
-    background: linear-gradient(274deg, rgba(239, 48, 56, 0.90) 85%, rgba(235, 76, 66, 0.00) 120%);
-    box-shadow: 0px 5px 30px 1px #F03A3D; 
-    z-index: -1;
-}
-/*-------------------- offerbtnrect --------------------*/
 /*-------------------- offerbtntext --------------------*/
 .offerbtntext{
-    width: 280px;height: 45px;
-    margin-left: 20px; margin-top: 15px;
+    width: 100%;height: 100%;
     flex-direction: column;
-    justify-content: center;
+    text-align: center; 
     flex-shrink: 0;
+    margin-top: 15%;
 
     color: #FFF;
-    text-align: center;
     font-family: Montserrat; 
     font-size: 26px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 /*-------------------- offerbtntext --------------------*/
 /*-------------------- offerbtn --------------------*/
 /*-------------------- offer --------------------*/
 /*-------------------- picture --------------------*/
 .picture{
-    position:absolute;
-    width: 785px; height: 840px;
-    top: 90px; left: 680px;
-    z-index: -1;    
+    width: 785px;
+    height: 839px;
 }
 /*-------------------- dog --------------------*/
-/*-------------------- doglight --------------------*/
-.doglight{
-    width: 400px; height: 835px;
-    margin-left: 225px; margin-top: 15px;
-
-    border-radius: 60px;
-    background: #FFF;
-    filter: blur(125px);
+.dog{
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: auto;
+    width: 100%; height: 100%;
+    margin-left: 100%; margin-top: -90%;
 }
-/*-------------------- doglight --------------------*/
-/*-------------------- dogimg --------------------*/
 .dogimg{
-    position: absolute;
-    width: 730px; height: 825px;
-    top: 105px;
-
-    z-index: 2;
+    width: auto; height: 835px;
+    z-index: 1;
 }
-/*-------------------- dogimg --------------------*/
-/*-------------------- dog --------------------*/
-/*-------------------- cat --------------------*/
-/*-------------------- catlight --------------------*/
-.catlight{
-    width: 350px; height: 560px;
-    margin-left: 460px; margin-top: -500px;
-
+.doglight{
+    position: absolute;
+    width: 397px;
+    height: 835px;
+    border-radius: 60px;
+    margin-left: calc(13% - 5px);
 
     border-radius: 60px;
     background: #FFF;
     filter: blur(125px);
+    z-index: -1;
 }
-/*-------------------- catlight --------------------*/
-/*-------------------- catimg --------------------*/
-.catimg{
-    position: absolute;
-    width: 340px; height: 455px;
-    top: 410px; left: 380px;
-
-    z-index: 1;
-
-}
-/*-------------------- catimg --------------------*/
+/*-------------------- dog --------------------*/
 /*-------------------- cat --------------------*/
+.cat{
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: auto;
+    width: 100%; height: 100%;
+    margin-left: 110%; margin-top: -90%;
+}
+.catimg{
+    width: 340px;
+    height: 455px;
+    flex-shrink: 0;
+    margin-left: 35%; margin-top: 25%;
+}
+.catlight{
+    position:absolute; 
+    width: 348px;
+    height: 559px;
+    flex-shrink: 0;
+    margin-left: calc(19% - 5px);
 
-
+    border-radius: 60px;
+    background: #FFF;
+    filter: blur(125px);
+    z-index: -1;
+}
+/*-------------------- cat --------------------*/
 
 /*-------------------- picture --------------------*/
 
