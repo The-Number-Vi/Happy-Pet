@@ -115,86 +115,45 @@ body {
 /*-------------------- cart --------------------*/
 /*-------------------- header --------------------*/
 
-/*-------------------- title --------------------*/
-.title{
-    display: flex;
-    position: relative;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 35px;
-    max-width: 900px;
-    color: #000;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin: 0 auto; margin-top: 35px;
-}
-/*-------------------- title --------------------*/
 
 
 
 /*-------------------- offer --------------------*/
-.shop-cards{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-    width: auto; height: auto;
-    margin-left: 3%;
+.offer{
+    display:grid;
+    place-items: center;
+    text-align: justify; 
+
+    margin-top: 70px;
 }
+.title{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
 
-.shop-cards p{
-    display: inline-block;
-    padding: 0 16px;
-    margin-top: 5px;
-    width: auto; height: auto;
-
-    color: #FFF;
+    color: #000;
     text-align: center;
     font-family: Montserrat;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
     line-height: normal;
 }
 
-.cards-title{
-    display: inline-block;
-    position: relative;
-    width: auto;
-    max-width: 400px; height: 32px;
-    left: 0;
-    top: 100%;
-
-    border-radius: 0px 7px 7px 0px;
-    background: rgba(70, 46, 24, 0.99);
-}
-
-.card{
+.description{
     display: flex;
-    width: 400px; height: 211px;
-    margin: 32px;
+    width: 800px;
+    height: auto;  
 
-    border-radius: 15px;
-    background: linear-gradient(180deg, #E1D78C 0%, rgba(225, 215, 140, 0.00) 100%);
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.img{
-    display: flex;
-    position: relative;
-    width: auto; height: auto;
-    margin: 0 auto;
-}
-
-.img-roadent{
-    display: flex;
-    position: relative;
-    width: auto; height: auto;
-    margin: 50px auto;
-    max-height: 50%;
-}
 /*-------------------- offer --------------------*/
